@@ -69,10 +69,11 @@ Trojan installing a backdoor
 
 Spyware stealing sensitive information
 
-🔁 Relationship Between Terms
-Concept	Description	Example
-Threat	Potential danger or attack source	Hacker, malware
-Weakness	Flaw or gap that reduces security	Poor password
-Vulnerability	Exploitable weakness	Unpatched software
-Exploit	Method to use the vulnerability	Code or tool that attacks
-Payload	Malicious action after exploitation	Ransomware or keylogger
+| Concept           | Description                         | Example                   |
+| ----------------- | ----------------------------------- | ------------------------- |
+| **Threat**        | Potential danger or attack source   | Hacker, malware           |
+| **Weakness**      | Flaw or gap that reduces security   | Poor password             |
+| **Vulnerability** | Exploitable weakness                | Unpatched software        |
+| **Exploit**       | Method to use the vulnerability     | Code or tool that attacks |
+| **Payload**       | Malicious action after exploitation | Ransomware or keylogger   |
+
