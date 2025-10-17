@@ -80,3 +80,35 @@ To ensure availability, network administrators should focus on the following fac
 - **Preventing Bottlenecks:** Monitor and manage network traffic to avoid congestion or bottlenecks, ensuring consistent performance.
 
 ![](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210623231629/454.png)
+
+
+
+confidentiality
+| Method                              | What It Does                                               | Example                                                       |
+| ----------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------- |
+| **1️⃣ Encryption**                  | Converts readable data into unreadable format using a key. | Encrypting an email so only the receiver can read it.         |
+| **2️⃣ Authentication**              | Verifies who you are.                                      | Username + password, biometrics, 2FA.                         |
+| **3️⃣ Authorization**               | Decides what you can access.                               | “Admin” can access everything; “User” can’t see system files. |
+| **4️⃣ Access Control Lists (ACLs)** | Set file or folder permissions.                            | `chmod 600 secret.txt` → only owner can read.                 |
+| **5️⃣ Data Masking**                | Hides sensitive parts of data.                             | Showing `****5678` instead of full credit card number.        |
+| **6️⃣ Secure Communication**        | Encrypts data in transit.                                  | HTTPS, VPN, SSH.                                              |
+
+integrity
+| Technique                                   | Purpose                                                                   | Example Tools / Protocols           |
+| ------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------- |
+| **1️⃣ Hashing**                             | Creates a unique digital fingerprint of data. Any change alters the hash. | SHA-256, MD5 (deprecated), SHA-3    |
+| **2️⃣ Checksums**                           | Quick math-based integrity check for files or packets.                    | CRC32, TCP checksums                |
+| **3️⃣ Digital Signatures**                  | Verify sender + data integrity using cryptography.                        | RSA, ECDSA                          |
+| **4️⃣ Message Authentication Codes (MACs)** | Verify message integrity using shared secret keys.                        | HMAC-SHA256                         |
+| **5️⃣ Version Control & Audit Logs**        | Track and record all changes.                                             | Git, SIEM logs, database journaling |
+
+availability
+| Technique                      | What It Does                                         | Example                                |
+| ------------------------------ | ---------------------------------------------------- | -------------------------------------- |
+| **1️⃣ Redundancy**             | Have backups of systems/hardware ready to take over. | Two web servers load-balanced.         |
+| **2️⃣ Backups**                | Copy data to another location regularly.             | Daily database backups to cloud.       |
+| **3️⃣ Load Balancing**         | Spread workload across servers to prevent overload.  | AWS Load Balancer, NGINX.              |
+| **4️⃣ Fault Tolerance**        | Systems continue working even when components fail.  | RAID disks, redundant power supply.    |
+| **5️⃣ Disaster Recovery (DR)** | Plans to restore systems after major failures.       | DR sites, snapshots, failover.         |
+| **6️⃣ Monitoring & Alerts**    | Detect downtime or issues quickly.                   | Prometheus, Grafana, Nagios.           |
+| **7️⃣ DDoS Protection**        | Defend against flooding attacks.                     | Cloudflare, AWS Shield, rate limiting. |
